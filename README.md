@@ -13,8 +13,8 @@ BERT Implementation on various datasets
 
 
   BERT has two models: 
-          1. BERTBASE: 12 encoders with 12 bidirectional self-attention heads
-          2. BERTLARGE: 24 encoders with 16 bidirectional self-attention heads
+          * BERTBASE: 12 encoders with 12 bidirectional self-attention heads
+          * BERTLARGE: 24 encoders with 16 bidirectional self-attention heads
   Both models are pre-trained from unlabeled data extracted from the BooksCorpus with 800M words and English Wikipedia with 2,500M words.
 
 
@@ -23,8 +23,8 @@ BERT Implementation on various datasets
 
 
   BERT was pretrained on two tasks:
-          1. Language Modelling (15% of tokens were masked and BERT was trained to predict them from context)
-          2. Sentence Prediction (BERT was trained to predict if a chosen next sentence was probable or not given the first sentence).
+          * Language Modelling (15% of tokens were masked and BERT was trained to predict them from context)
+          * Sentence Prediction (BERT was trained to predict if a chosen next sentence was probable or not given the first sentence).
 
 
   As a result of the training process, BERT learns contextual embeddings for words. After pretraining, which is computationally expensive, BERT can be finetuned with     fewer resources on smaller datasets to optimize its performance on specific tasks.
@@ -73,12 +73,12 @@ BERT Implementation on various datasets
 
   Advantages of RNN:
           
-         1. An RNN remembers each and every information through time. It is useful in time series prediction only because of the feature to remember previous inputs as             well. This is called Long Short Term Memory.
-         2. For Computer Vision and Image Processing Applications, Recurrent neural network are even used with convolutional layers to extend the effective pixel                  neighborhood.
+         * An RNN remembers each and every information through time. It is useful in time series prediction only because of the feature to remember previous inputs as             well. This is called Long Short Term Memory.
+         * For Computer Vision and Image Processing Applications, Recurrent neural network are even used with convolutional layers to extend the effective pixel                  neighborhood.
 
 
  Disadvantages of Recurrent Neural Network:
 
-          1. Gradient vanishing and exploding problems.
-          2. Training an RNN is a very difficult task.
-          3. It cannot process very long sequences if using tanh or relu as an activation function.
+          * Gradient vanishing and exploding problems.
+          * Training an RNN is a very difficult task.
+          * It cannot process very long sequences if using tanh or relu as an activation function.
