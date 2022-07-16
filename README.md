@@ -62,23 +62,26 @@ BERT Implementation on various datasets
 
 ## RNN Basics:
 
+Recurrent Neural Network(RNN) is a popular architecture of Neural Network which is used extensively with use cases consist of sequential or contextual data.
 
-  Recurrent Neural Network(RNN) is a popular architecture of Neural Network which is used extensively with use cases consist of sequential or contextual data.
+In traditional neural networks, all the inputs and outputs are independent of each other, but in cases like when it is required to predict the next word of a           sentence, the previous words are required and hence there is a need to remember the previous words. Thus RNN came into existence, which solved this issue with the     help of a Hidden Layer. The main and most important feature of RNN is Hidden state, which remembers some information about a sequence.
 
+RNN have a “memory” which remembers all information about what has been calculated. It uses the same parameters for each input as it performs the same task on all     the inputs or hidden layers to produce the output. This reduces the complexity of parameters, unlike other neural networks.
 
-  In traditional neural networks, all the inputs and outputs are independent of each other, but in cases like when it is required to predict the next word of a           sentence, the previous words are required and hence there is a need to remember the previous words. Thus RNN came into existence, which solved this issue with the     help of a Hidden Layer. The main and most important feature of RNN is Hidden state, which remembers some information about a sequence.
-
-  RNN have a “memory” which remembers all information about what has been calculated. It uses the same parameters for each input as it performs the same task on all     the inputs or hidden layers to produce the output. This reduces the complexity of parameters, unlike other neural networks.
-
-
-  Advantages of RNN:
-          
-         * An RNN remembers each and every information through time. It is useful in time series prediction only because of the feature to remember previous inputs as             well. This is called Long Short Term Memory.
-         * For Computer Vision and Image Processing Applications, Recurrent neural network are even used with convolutional layers to extend the effective pixel                  neighborhood.
+Advantages of RNN:
+  * An RNN remembers each and every information through time. It is useful in time series prediction only because of the feature to remember previous inputs as             well. This is called Long Short Term Memory.
+  * For Computer Vision and Image Processing Applications, Recurrent neural network are even used with convolutional layers to extend the effective pixel                  neighborhood.
 
 
- Disadvantages of Recurrent Neural Network:
+Disadvantages of Recurrent Neural Network:
+    * Gradient vanishing and exploding problems.
+    * Training an RNN is a very difficult task.
+    * It cannot process very long sequences if using tanh or relu as an activation function.
 
-          * Gradient vanishing and exploding problems.
-          * Training an RNN is a very difficult task.
-          * It cannot process very long sequences if using tanh or relu as an activation function.
+
+## Contributors
+* Tonumoy Mukherjee tonumoymukherjee2@gmail.com
+
+## License & Copyright
+&#169; Tonumoy Mukherjee, TuTeck Technologies Pvt. Ltd
+> Licensed under the [MIT License](LICENSE).
