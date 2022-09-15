@@ -71,5 +71,5 @@ Disadvantages of Recurrent Neural Network:
 * Tonumoy Mukherjee tonumoymukherjee1@gmail.com
 
 ## License & Copyright
-&#169; Tonumoy Mukherjee, TuTeck Technologies Pvt. Ltd
+&#169; Tonumoy Mukherjee
 > Licensed under the [MIT License](LICENSE).
